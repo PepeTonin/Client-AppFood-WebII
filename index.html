@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppFood</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="title">
+            Cliente App Food
+        </div>
+        <div class="tabs_wrap">
+            <div class="sub_title">
+                Cadastrar
+            </div>
+            <ul>
+                <li data-tabs="categoria" class="active">Categoria</li>
+                <li data-tabs="produto" class="">Produto</li>
+            </ul>
+        </div>
+        <div class="container">
+            <ul>
+                <!-- CATEGORIA -->
+                <li class="item_wrap categoria">
+                    <div class="item">
+                        <label for="nomeCategoria">Nome</label>
+                        <input type="text" id="nomeCategoria">
+                    </div>
+                </li>
+                <li class="item_wrap categoria">
+                    <div class="item">
+                        <label for="iconeCategoria">Icone</label>
+                        <input type="text" id="iconeCategoria" placeholder="atalho win + . para emojis">
+                    </div>
+                </li>
+                <li class="item_wrap categoria">
+                    <div class="button_container">
+                        <button id="enviarCategoria">Cadastrar</button>
+                    </div>
+                </li>
+                <!-- PRODUTO -->
+                <li class="item_wrap produto">
+                    <div class="item">
+                        <label for="nomeProduto">Nome</label>
+                        <input type="text" id="nomeProduto">
+                    </div>
+                </li>
+                <li class="item_wrap produto">
+                    <div class="item">
+                        <label for="descricaoProduto">Descrição</label>
+                        <input type="text" id="descricaoProduto">
+                    </div>
+                </li>
+                <li class="item_wrap produto">
+                    <div class="item">
+                        <label for="imagemProduto">Arquivo da imagem</label>
+                        <input type="file" id="imagemProduto" class="custom-file-input">
+                    </div>
+                </li>
+                <li class="item_wrap produto">
+                    <div class="item">
+                        <label for="precoProduto">Preço</label>
+                        <input type="text" id="precoProduto">
+                    </div>
+                </li>
+                <li class="item_wrap produto">
+                    <div class="item">
+                        <label for="categoriaProduto">Categoria</label>
+                        <select id="categoriaProduto">
+
+                        </select>
+                    </div>
+                </li>
+                <li class="item_wrap produto">
+                    <div class="button_container">
+                        <button id="enviarProduto">Cadastrar</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
